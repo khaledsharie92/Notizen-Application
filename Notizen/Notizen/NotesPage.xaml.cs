@@ -31,9 +31,7 @@ namespace Notizen
                 });
             }
 
-            listView.ItemsSource = notes
-                .OrderBy(d => d.Date)
-                .ToList();
+            listView.ItemsSource = notes.OrderBy(d => d.Date).ToList();
         }
 
         async void OnNoteAddedClicked(object sender, EventArgs e)

@@ -14,6 +14,6 @@ namespace Notizen
             FolderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData));
             MainPage = new NavigationPage(new NotesPage());
         }
-        // ...
+        
     }
 }

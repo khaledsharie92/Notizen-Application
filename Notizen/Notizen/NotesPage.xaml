@@ -12,8 +12,19 @@
               ItemSelected="OnListViewItemSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
-                <TextCell Text="{Binding Text}"
-                          Detail="{Binding Date}" />
+                <ViewCell>
+                    <StackLayout
+                        Orientation="Vertical">
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="{Binding Image}" />
+                            <Label Text="{Binding Text}"
+                                TextColor="#f35e20" />
+                            <Label Text="{Binding Date}"
+                                HorizontalOptions="EndAndExpand"
+                                TextColor="#503026" />
+                        </StackLayout>
+                    </StackLayout>
+                </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
